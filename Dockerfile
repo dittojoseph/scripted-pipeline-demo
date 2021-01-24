@@ -5,8 +5,8 @@ RUN yum install -y httpd \
  unzip 
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page263/shiphile.zip /var/www/html/
 WORKDIR /var/www/html
-RUN unzip photogenic.zip
-RUN cp -rvf photogenic/* .
-RUN rm -rf photogenic photogenic.zip 
+RUN unzip shiphile.zip
+RUN cp -rvf shiphile/* .
+RUN rm -rf shiphile shiphile.zip 
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80
