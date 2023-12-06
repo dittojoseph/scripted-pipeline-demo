@@ -3,12 +3,20 @@ on:
   workflow_dispatch:
     branches:
       - master
+      - test
   repository_dispatch:
      branches:
-       - master  
+       - master    
        - test
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Echo Workflow name
+
+        shell: bash
+
+        run: |
+          echo :build api:
+          sleep 8
