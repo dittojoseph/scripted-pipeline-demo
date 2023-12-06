@@ -11,3 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+          steps:
+
+      - name: Echo Workflow name
+
+        shell: bash
+
+        run: |
+          echo :build api:
+          sleep 5
