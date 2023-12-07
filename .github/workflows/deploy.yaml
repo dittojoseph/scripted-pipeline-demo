@@ -19,4 +19,4 @@ jobs:
 
         run: |
           echo :build api:
-          sleep 8
+          sleep 20
